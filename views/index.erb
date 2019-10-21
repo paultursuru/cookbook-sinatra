@@ -1,0 +1,11 @@
+<h4>
+  HI! I'm in a <em>view</em>!
+  And it's <%= Time.now %> ..
+</h4>
+
+<h5> List of my recipes : </h5>
+<h6><br> <% @cookbook.all.each do |recipe| %>
+  <ul><%= recipe.name %></ul>
+   <% end %> ..</h6>
+
+<h6><a href="http://40ccabf9.ngrok.io/new">create my recipe !</a></h6>
